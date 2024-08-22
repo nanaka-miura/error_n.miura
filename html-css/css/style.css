@@ -1,0 +1,985 @@
+* {
+    line-height: 1;
+}
+
+.number__child {
+    padding-left: 40px;
+}
+
+.number__parent:nth-child(3n) {
+    color: red;
+}
+
+.number__child.number__child:nth-child(3n) {
+    color: blue;
+}
+
+.number__child.number__child:nth-child(3n-1) {
+    color: blue;
+}
+
+.example1 {
+    display: inline;
+}
+
+.example2 {
+    display: block;
+}
+
+.example3,
+.example4 {
+    display: inline-block;
+}
+
+.example1 {
+    background-color: red
+}
+
+.text {
+    font-weight: bold;
+}
+
+.text {
+    text-decoration: overline;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.bg {
+    background-image: url(../img/firstview.jpg);
+    background-size: cover;
+    background-position: bottom;
+    height: 700px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100hw;
+}
+
+.iro {
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+
+.aka {
+    height: 50%;
+    background-color: red;
+}
+
+.box {
+    width: 400px;
+    height: 200px;
+    background: red;
+    margin: 50px auto;
+}
+
+.kado {
+    width: 200px;
+    height: 200px;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background: red;
+    margin: 0px auto;
+}
+
+.kage {
+    width: 200px;
+    height: 200px;
+    box-shadow: 10px 10px black;
+    background: red;
+    margin-bottom: 20px;
+}
+
+.kuwashiku {
+    width: 200px;
+    padding: 10px 0;
+    color: white;
+    border-radius: 30px;
+    background:linear-gradient(to right, #ff5800,#8b00be) ;
+    text-align: center;
+    box-shadow: 0 5px 0 rgba(255,0,0,0.2);
+    margin:100px auto 0;
+    display: block;
+}
+
+.block {
+    box-shadow: 0 0 6px #eeeeee;
+    display: flex;
+    width: 760px;
+    margin: 100px auto;
+}
+
+.block__img {
+    width: 40%;
+}
+
+.card__img img {
+    width: 100%;
+    vertical-align: top;
+}
+
+.block__text {
+    padding: 15px;
+}
+
+.block__title {
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+
+.block__tag {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.block__tag--red {
+    color: red;
+    margin-left: 40px;
+}
+
+.card {
+    width: 30%;
+    margin: 100px auto;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+.card__img img {
+    width: 100%;
+}
+
+.card__content {
+    padding: 15px 25px;
+}
+
+.card__content-ttl {
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.card__content-cat {
+    background: #008888;
+    color: white;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.card__content-tag {
+    font-size: 14px;
+    text-align: right;
+}
+
+.card__content-tag-item {
+    color: #008888;
+    display: inline-block;
+}
+
+.card__content-tag-item--last {
+    margin-left: 15px;
+    color: #888888;
+    display: inline-block;
+}
+
+.blocks {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px auto;
+}
+
+
+@media screen and (min-width: 768px){
+    .card {
+        width: 45%;
+    }
+}
+
+@media  screen and (min-width: 1000px) {
+    .card {
+        width: 30%;
+    }
+}
+
+.elephant {
+    position: relative;
+}
+
+.elephant__img {
+    width: 50%;
+    display: block;
+    margin: 0 0 0 auto;
+}
+
+.elephant__title {
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+}
+
+.flower {
+    max-width: 760px;
+    width: 100%;
+    margin: 60px auto;
+}
+
+.flower__content__gazo {
+    float: right;
+    width: 400px;
+    margin: 0 0 20px 20px;
+}
+
+.flower__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+}
+
+.gridlayout {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 300px 300px 100px 200px;
+    grid-template-columns: 2fr 2fr 2fr 1fr;
+}
+
+.box1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    background: rebeccapurple;
+}
+
+.box2 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    background: red;
+}
+.box3 {
+    grid-row: 1/2;
+    grid-column: 2/4;
+    background: blue;
+}
+.box4 {
+    grid-row: 2/3;
+    grid-column: 2/4;
+    background: skyblue;
+}
+.box5 {
+    grid-row: 1/4;
+    grid-column: 4/5;
+    background: yellow;
+}
+.box6 {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background: palevioletred;
+}
+.box7 {
+    grid-row: 4/5;
+    grid-column: 1/3;
+    background: orange;
+}
+.box8 {
+    grid-row: 4/5;
+    grid-column: 3/4;
+    background: green;
+}
+
+.parent {
+    position: relative;
+    background: black;
+    color: white;
+    width: 300px;
+    height: 300px;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.ttlala::before {
+    content: "";
+    background: url(../img/inspiration.svg);
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.botan {
+    position: relative;
+    background-color: #55bbbb;
+    width: 200px;
+    display: block;
+    padding: 18px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin: 100px auto;
+    text-decoration: none;
+}
+
+.botan::after {
+    content: "";
+    background: url(../img/download__icon.svg);
+    position: absolute;
+    background-size: cover;
+    width: 30px;
+    height: 30px;
+    top: 50%;
+    transform: translate(0 ,-50%);
+    right: 15px;
+}
+
+.hukidasi {
+    padding: 10px 20px;
+    background: red;
+    position: relative;
+    display: inline-block;
+    color: white;
+}
+
+.hukidasi::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    border: 10px solid transparent;
+    border-top: 10px solid red;
+    margin-left: -10%;
+}
+
+.dekiru {
+    display: block;
+    position: relative;
+    color: white;
+    background: #55bbbb;
+    padding: 15px;
+    border-radius: 10px;
+    width: 200px;
+    margin: 50px auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.dekiru::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    background: url(../img/mail.svg);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    transform: translate(0, -50%);
+}
+
+.dekiru::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    background: url(../img/download__icon.svg);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    transform: translate(0, -50%);
+}
+
+.five {
+    font-size: 40px;
+    color: red;
+    font-weight: 900;
+}
+
+.fivep {
+    font-size: 20px;
+}
+
+.muryou {
+    font-size: 30px;
+    font-weight: bold;
+    background: linear-gradient(transparent 70%, yellow 30%);
+}
+
+.tensen {
+    display: inline;
+    border-bottom: 3px dashed;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.hidari {
+    border-left: 5px solid;
+    font-size: 30px;
+    padding: 5px;
+    background: gray;
+    width: 300px;
+}
+
+.oya {
+    position: relative;
+}
+
+.ryousaido {
+    position: relative;
+    display: inline-block;
+    padding: 0 50px;
+}
+
+.ryousaido::before,
+.ryousaido::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    background: black;
+    width: 30px;
+    height: 1px;
+
+}
+
+.ryousaido::before {
+    left: 0;
+}
+
+.ryousaido::after {
+    right: 0;
+}
+
+.head {
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 30px;
+    font-weight: bold;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.head__logo {
+    font-size: 20px;
+    width: 80px;
+}
+
+.head__navi__list {
+    display: flex;
+    list-style: none;
+    font-size: 14px;
+}
+
+.head__navi__text:not(:last-child) {
+    margin-right: 15px;
+}
+
+.tate {
+    background: black;
+    color: white;
+    font-weight: bold;
+    padding: 20px 0;
+}
+
+.tate__rogo {
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.tate__navi__list {
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+}
+
+.tate__navi__text:not(:last-child) {
+    margin-right: 15px;
+}
+
+.hoot {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hoot__logo {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hoot__navi__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hoot__navi__text:not(:last-child) {
+    margin-right: 20px;
+}
+
+.hoot__copy {
+    font-size: 9px;
+}
+
+.yoko {
+    background: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.yoko_a {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.yoko__logo {
+    font-size: 20px;
+}
+
+.yoko__navi__list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.yoko__navi__text:not(:last-child) {
+    margin-right: 15px;
+}
+
+.yoko__b {
+    font-size: 9px;
+}
+
+.card___test {
+    width: 400px;
+    margin: 50px;
+    padding: 20px 15px;
+    border-radius: 10px;
+    border: 1px solid #888888;
+}
+
+.card___ttl {
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card___text {
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.card___btn {
+    text-align: center;
+    color: orange;
+}
+
+.hukusu {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 20px;
+}
+
+.hukusu__card {
+    width: 20%;
+    cursor: pointer;
+    border-radius: 1px;
+    border: 1px solid gray;
+}
+
+.hukusu__card__text {
+    padding: 20px;
+}
+
+.hukusu__card__ttl {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hukusu__card__date {
+    font-size: 15px;
+}
+
+.hukusu__card__imgg {
+    background: skyblue;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.hukusu__card__img {
+    width: 100px;
+    height: auto;
+}
+
+.listt {
+    margin: 20px;
+    width: 30%;
+    padding: 10px 30px;
+    border: 5px solid black;
+    border-radius: 5px;
+    background: lightyellow;
+}
+
+.listt__text {
+    list-style-position: inside;
+    line-height: 1.5em;
+    padding: 10px 0;
+}
+
+.listyoko {
+    margin: 15px;
+    display: flex;
+    list-style: none;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.listyoko_text1 {
+    padding-right: 30px;
+    color: dimgray;
+    text-decoration: underline 10px orange;
+}
+
+.listyoko_text2,.listyoko_text3,.listyoko_text4 {
+    color: lightgray;
+    padding-right: 30px;
+}
+
+.wrapper {
+    font-weight: bold;
+    color: #999;
+    font-size: 40px;
+}
+
+.wrapper__list {
+    display: flex;
+    list-style: none;
+    padding: 10px 10px;
+    align-items: baseline;
+}
+
+.wrapper__item:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+.wrapper__item:first-of-type {
+    line-height: 1.4;
+    color: #555;
+    border-bottom: 10px solid #d7b071;
+}
+
+.hyou {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px;
+}
+
+.hyou__gyou:last-child {
+    border-bottom: 1px solid red
+}
+
+.hyou__midasi {
+    text-align: center;
+    padding: 20px 0;
+    border-right: solid 1px red;
+    border-left: solid 1px red;
+}
+
+.hyou__midasi:nth-child(1) {
+    background: lightgray;
+}
+
+.hyou__midasi:nth-child(2) {
+    background: red;
+    color: white;
+}
+
+.hyou__midasi:nth-child(3) {
+    background: #d7b071;
+    color: white;
+}
+
+.hyou__gyou:nth-child(2) .hyou__waku {
+    padding-top: 20px;
+    font-size: 28px;
+}
+
+.hyou__gyou:nth-child(3) .hyou__waku {
+    padding-bottom: 20px;
+}
+
+.hyou__waku {
+    text-align: center;
+    border-right: solid 1px red;
+    border-left: solid 1px red;
+    padding: 10px 0;
+}
+
+.hyou__waku a {
+    color: #005fff;
+    padding: 7px 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.yokohyou {
+    width: 80%;
+    margin: 50px;
+    border-collapse: collapse;
+    border: 1px solid gray;
+}
+
+.yokohyou tr th {
+    background: lightgray;
+    padding: 15px 40px;
+    font-weight: bold;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+}
+
+.yokohyou tr td {
+    padding: 15px 40px;
+    border-bottom: 1px solid gray;
+}
+
+.form {
+    width: 50%;
+    margin: 50px;
+}
+
+.form__gyou {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.form__gyou:not(:last-child) {
+    border-bottom: 1px solid lightgray;
+}
+
+.form__midasi {
+    display: flex;
+}
+
+.form__hisu {
+    background: #5AC8AB;
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+    font-size: 14px;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+}
+
+.form__midasi div {
+    font-weight: bold;
+}
+
+input,textarea {
+    background: #EAEDF1;
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid gray;
+    width: 200px;
+}
+
+input {
+    height: 2.5em;
+}
+
+.form__text {
+    margin: auto 0 auto 10px;
+}
+
+.form__gyou__sousin {
+    padding: 20px;
+    text-align: center;
+}
+.form__gyou__sousin input {
+    background: #5AC8AB;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    height: 50px;
+}
+
+.charange {
+    width: 50%;
+    margin: 50px;
+}
+.charange__gyou {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid lightgray;
+    padding: 24px 0;
+    align-items: center;
+}
+
+.charange__gyou:nth-child(5) {
+    border-bottom: 1px solid lightgray;
+}
+
+.charange__label {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.charange__label__green {
+    background: #5AC8AB;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.charange__gyou__sousin {
+    text-align: center;
+    padding: 24px 0;
+}
+
+.charange__gyou__sousin input {
+    background: #5AC8AB;
+    font-weight: bold;
+    border-style: none;
+    color: white;
+    width: 200px;
+    height: 50px;
+}
+
+.pink {
+    height: 100px;
+    color: white;
+    background: pink;
+}
+
+.blue {
+    height: 500px;
+    color: white;
+    background: #55bbbb;
+}
+
+.yellow {
+    height: 100px;
+    color: white;
+    background: yellow;
+}
+
+.multi__head {
+    background: pink;
+    color: white;
+    height: 100px;
+}
+
+.multi__naka {
+    display: flex;
+    height: 500px;
+}
+
+.multi__left {
+    background: #55bbbb;
+    color: white;
+    width: 70%;
+    height: 100%;
+}
+
+.multi__right {
+    background: purple;
+    color: white;
+    width: 30%;
+    height: 100%;
+}
+
+.multi__food {
+    background: yellow;
+    color: white;
+    height: 100px;
+}
+
+.grid__head {
+    background: pink;
+    color: white;
+    height: 50px;
+}
+
+.grid__gallery {
+    column-count: 3;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid__gallery__content {
+    break-inside: avoid;
+    text-align: center;
+}
+
+.grid__gallery__content img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.grid__foot {
+    background: yellow;
+    color: white;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.back {
+    background-image: url(../img/mv.jpg);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.back__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 50px;
+    color: white;
+    transform: translate(-50%,-50%);
+}

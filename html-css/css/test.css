@@ -1,0 +1,331 @@
+* {
+    line-height: 1;
+}
+
+.text {
+    font-size: 15px;
+}
+.text span {
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.muryo {
+    font-weight: bold;
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.tensen {
+    font-size: 30px;
+    text-decoration: underline;
+    text-decoration-style: dashed;
+}
+
+.left {
+    display: block;
+    padding: 5px;
+    border-left: 5px solid;
+    background: lightgray;
+    width: 120px;
+}
+
+.naka {
+    display: inline-block;
+    position: relative;
+    padding: 0 70px;
+}
+
+.naka:before,
+.naka:after {
+    content:"";
+    position: absolute;
+    top:50%;
+    background: black;
+    width: 50px;
+    height: 1px;
+    display: inline-block;
+}
+.naka:before {
+    left: 0;
+}
+.naka:after {
+    right: 0;
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    font-weight: bold;
+    color: white;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+}
+.head__logo {
+    font-size: 20px;
+}
+.head__navi {
+    display: flex;
+    font-size: 13px;
+}
+.head__navi p:not(:last-child) {
+    margin-right: 20px;
+}
+
+.headtwo {
+    background: black;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.headtwo__navi {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 10px;
+}
+.headtwo__navi p:not(:last-child) {
+    margin-right: 25px;
+}
+
+.foot {
+    background: black;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.foot__logo {
+    font-size: 30px;
+}
+.foot__navi {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+.foot__navi p:not(:last-child) {
+    margin-right: 15px;
+}
+.foot__copy {
+    font-size: 10px;
+}
+
+.footyoko {
+    background: black;
+    color: white;
+    padding: 15px;
+    margin-bottom: 5px;
+}
+.footyoko__content {
+    display: flex;
+    justify-content: space-between;
+}
+.footyoko__logo {
+    font-size: 20px;
+}
+.footyoko__navi {
+    display: flex;
+}
+.footyoko__navi p {
+    font-size: 10px;
+    font-weight: bold;
+}
+.footyoko__navi p:not(:last-child) {
+    margin-right: 15px;
+}
+.footyoko__copy {
+    text-align: center;
+    margin-top: 7px;
+    font-size: 10px;
+}
+
+.card {
+    width: 450px;
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    padding: 25px 10px;
+    margin-bottom: 5px;
+}
+.card h2 {
+    font-size: 30px;
+}
+.card p {
+    font-size: 20px;
+    padding: 10px 0;
+}
+.card a {
+    text-decoration: none;
+    color: burlywood;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.cardhukusu {
+    border: 2px solid lightgray;
+    border-radius: 3px;
+    width: 300px;
+}
+.cardhukusu__gazo {
+    background: #E0F2FF;
+    width: 300px;
+    height: 150px;
+}
+.cardhukusu__gazo img {
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+.cardhukusu__content {
+    padding: 20px;
+}
+.cardhukusu__ttl {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+.cardhukusu__date {
+    font-size: 15px;
+}
+.cardhukusutop {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 10px;
+    margin-bottom: 5px;
+}
+
+.listbox {
+    background: lightgoldenrodyellow;
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 300px;
+    margin-bottom: 5px;
+}
+.listbox ul {
+    list-style-position: inside;
+    padding: 20px;
+}
+.listbox li {
+    line-height: 2;
+}
+
+.yokolist {
+    font-weight: bold;
+    color: lightgray;
+    display: flex;
+    margin-bottom: 5px;
+}
+.yokolist li {
+    list-style: none;
+    font-size: 20px;
+}
+.yokolist li:not(:last-child) {
+    margin-right: 10px;
+}
+.yokolist li:nth-child(1) {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: yellow;
+}
+
+.plan th {
+    width: 20%;
+    font-weight: bold;
+    padding: 20px 30px;
+    font-size: 20px;
+    border-right: 1px solid lightgray;
+}
+.plan th:nth-child(1) {
+    background: lightgray;
+    border-left: 1px solid lightgray;
+}
+.plan th:nth-child(2) {
+    background: red;
+    color: white;
+}
+.plan th:nth-child(3) {
+    background: #D7AF71;
+    color: white;
+}
+.price td {
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 0;
+    border-right: 1px solid lightgray;
+}
+.kuwasiku td {
+    text-align: center;
+    font-size: 15px;
+    color: blue;
+    padding-bottom: 20px;
+    border-right: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+.price td:nth-child(1),
+.kuwasiku td:nth-child(1) {
+    border-left: 1px solid lightgray;
+}
+
+.yokohyou {
+    width: 50%;
+    border-collapse: collapse;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
+.yokohyou th {
+    background: lightgray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;
+    font-weight: bold;
+    padding: 20px;
+}
+.yokohyou td {
+    border-bottom: 1px solid gray;
+    padding: 20px;
+}
+
+form {
+    width: 50%;
+}
+.gyou {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+    border-top: 1px solid lightgray;
+}
+.gyou span {
+    background: #5AC8AB;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
+.gyou div {
+    font-weight: bold;
+}
+.eria {
+    background: lightgray;
+    border-radius: 3px;
+    border: gray;
+    padding: 10px;
+    width: 50%;
+}
+.botan {
+    background: #5AC8AB;
+    font-weight: bold;
+    color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 auto;
+}
